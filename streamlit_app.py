@@ -3,8 +3,8 @@ import psycopg2
 import urllib.request
 import json
 
-DB_URL = "DB_URL_PLACEHOLDER"
-API_KEY = "OPENROUTER_API_KEY_PLACEHOLDER"
+DB_URL = st.secrets["DB_URL"]
+API_KEY = st.secrets["API_KEY"]
 MODEL = "google/gemma-4-31b-it"
 
 def get_conn():
